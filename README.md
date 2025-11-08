@@ -1,7 +1,6 @@
 # 📘 English-to-Persian PDF Translator (Offline)
 
-This project provides a **local deep learning pipeline** for translating **English PDF documents into Persian (Farsi)** using **MBART multilingual models** from Hugging Face.  
-It supports PDF text extraction, OCR for scanned pages, and right-to-left Persian text rendering.
+This project provides a **local deep learning pipeline** for translating **English PDF documents into Persian (Farsi)** using **MBART multilingual models** from Hugging Face. It supports PDF text extraction, OCR for scanned pages, and right-to-left Persian text rendering.
 
 ---
 
@@ -41,7 +40,7 @@ Put your file (e.g., sample.pdf) in the project folder.
 
 ### 2️⃣ Run the translator
 ```
-python pdf_translator_local_models.py sample.pdf
+python pdf_translator_local_models.py
 ```
 This script will:
 * Extract and clean text from the PDF
@@ -86,7 +85,7 @@ Make sure **Tesseract OCR** is installed on your system if you want to process s
 Persian text is reshaped and rendered correctly using:
 ```
 from arabic_reshaper import reshape
-from bidi.algorithm import get_display
+from bidi. algorithm import get_display
 
 final_text = get_display(reshape(translated_text))
 ```
