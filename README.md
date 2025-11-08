@@ -107,4 +107,3 @@ Output (Persian):
 
 This project is released under the MIT License.
 Feel free to use, modify, and distribute with proper credit.
-AI Researcher & Python Developer
